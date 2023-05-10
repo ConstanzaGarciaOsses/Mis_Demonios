@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Me esta dando la pauta el tamaño del ancho de la grilla ... NO EL ALTO */
+  row-gap: 20px;
+  column-gap: 20px;
+  /* border: solid 5px red; */
+}
+.grid-item {
+  padding: 10px;
+  color: red;
+  border-radius: 25px;
+  border: solid 2px black;
+  box-shadow: -3px 2px 28px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 2px 28px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 2px 28px -5px rgba(0, 0, 0, 0.75);
+}
+
+.grid-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}

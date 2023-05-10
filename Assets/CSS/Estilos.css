@@ -1,0 +1,130 @@
+/* El reseteo de margin y padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estructura de la pagina. Es mas que nada armar el esqueleto */
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'sidebar main'
+    'footer footer';
+    grid-template-columns: 1fr 6fr;
+}
+
+header{
+    grid-area: header;
+    border: 2px solid lawngreen;
+}
+
+sidebar{ 
+    grid-area: sidebar;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.955);
+    border: 2px solid lawngreen;
+    color: wheat;
+}
+
+main{
+    grid-area: main;
+    height: 100%;
+    border: 2px solid lawngreen;
+    box-sizing: border-box;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    border: 2px solid lawngreen;
+    height: 60px;
+    background-color: black;
+    color: wheat;
+    padding-top: 30px;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+
+/* Aqui comienza lo estetico. Primero vamos a trabajar sobre el titulo */ 
+.Titulo{
+    background-color: rgb(0, 0, 0);
+    color: lawngreen;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+
+/* Continuamos con el menu lateral */ 
+.Menu{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    padding-left: 10px;
+}
+
+ul span{
+    color: rgb(105, 105, 105);
+    font-style: italic;
+}
+
+ul h4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 27px;
+}
+
+ul li {
+    padding-bottom: 10px;
+    list-style: none;
+    font-size: 17px;
+}
+
+
+/* Aqui comenzamos a trabajar sobre el main que es la muestra de demonios. */ 
+main{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    row-gap: 70px;
+    column-gap: 30px;
+    padding: 25px;
+    background-color: black;
+}
+
+/* La clase de las cuatro cards */ 
+.Demonio {
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Imagen de los demonios dentro de la card */
+.Demonio img {
+    object-fit: contain;
+    height: 400px;
+    width: 100%;
+}
+
+/* Titulo de los demonios (lo que hacen*/ 
+.Demonio h2{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+/* Ok, abarca toda la card y esta bonito */
+button{
+    padding: 10px;
+    background-color: maroon;
+    color: lawngreen;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
